@@ -1,16 +1,69 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: auto;
+            width: 500px;
+            height: 600px;
+            margin-top: 200px;
+        }
+        h1{
+            display: none;
+            
+        }
+        h2{
+            font-size: 40px;
+            margin-left: 160px;
+            margin-bottom: 20px;
+        }
+        fieldset{
+            border: 1.5px solid rgb(175, 164, 164);
+            width:500px;
+            height: 350px;
+            border-radius: 10px;
+            padding-top: 38px;
+        }
+        p a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            margin: 15px 60px;
+            padding: 10px 30px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+        #join , #write{
+            border: 1px solid #4098e0;
+            background-color: #4098e0;
+        }
+        #member_list, #article_list{
+            border: 1px solid #c9c9c9;
+            background-color: #c9c9c9;
+        }
+
+    </style>
+</head>
 <body>
 <div class="container">
     <div>
         <h1>Hello Spring</h1>
-        <p>회원 기능</p>
+        <h2>회원 기능</h2>
+        <fieldset>
         <p>
-            <a href="/input-form">회원 가입</a>
-            <a href="/members">회원 목록</a>
-            <a href="/new">게시글 쓰기</a>
-            <a href="/articleList">게시물 목록</a>
+            <a href="/input-form" id = "join">회원 가입</a>
+            <a href="/members" id = "member_list">회원 목록</a>
+            <a href="/new" id="write">게시글 쓰기</a>
+            <a href="/articleList" id = "article_list">게시물 목록</a>
         </p>
+        </fieldset>
     </div>
 </div> <!-- /container -->
 </body>
